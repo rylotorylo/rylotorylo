@@ -57,7 +57,7 @@ th, td {
 	padding-right: 20px;
 }
 
-.two-colums {
+.two-columns {
 	display: grid;
 	grid-template-columns: calc(50% - 1em) calc(50% - 1em);
 	grid-gap: 2em;
@@ -65,7 +65,7 @@ th, td {
 	margin: 0;
 }
 
-.two-colums > div {
+.two-columns > div {
 	padding: 0;
 	margin: 0;
 }
@@ -75,7 +75,7 @@ th, td {
 	border-radius: 1em;
 }
 
-.five-colums {
+.four-columns {
 	display: grid;
 	grid-template-columns: calc(25% - 1em) calc(25% - 1em) calc(25% - 1em) calc(25% - 1em);
 	grid-gap: 0em;
@@ -84,12 +84,12 @@ th, td {
 	font-size: 87%;
 }
 
-.five-colums > div {
+.four-columns > div {
 	padding: 10px;
 	margin: 0;
 	border-left: 1px solid #ccc;
 }
 
-.five-colums > div.noborder {
+.four-columns > div.noborder {
 	border-left: 0;
 }
