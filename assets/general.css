@@ -10,15 +10,23 @@ body {
 	padding: 0;
 }
 
-figure, figcaption {
+figure, figcaption, h5 {
 	margin: 0;
 	padding: 0;
+}
+
+p, h5 {
+	font-size: inherit;
 }
 
 img {
 	width: 100%;
 	height: auto;
 	border: 0;
+}
+
+.radius-1em {
+	border-radius: 1em;
 }
 
 .wrapper {
@@ -47,4 +55,41 @@ table, th, td, tr {
 th, td {
 	width: calc(20% - 20px);
 	padding-right: 20px;
+}
+
+.two-colums {
+	display: grid;
+	grid-template-columns: calc(50% - 1em) calc(50% - 1em);
+	grid-gap: 2em;
+	padding: 0;
+	margin: 0;
+}
+
+.two-colums > div {
+	padding: 0;
+	margin: 0;
+}
+
+.columns-container {
+	border: 1px solid #CCCCCC;
+	border-radius: 1em;
+}
+
+.five-colums {
+	display: grid;
+	grid-template-columns: calc(25% - 1em) calc(25% - 1em) calc(25% - 1em) calc(25% - 1em);
+	grid-gap: 0em;
+	padding: 0;
+	margin: 0;
+	font-size: 87%;
+}
+
+.five-colums > div {
+	padding: 10px;
+	margin: 0;
+	border-left: 1px solid #ccc;
+}
+
+.five-colums > div.noborder {
+	border-left: 0;
 }
