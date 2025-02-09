@@ -57,6 +57,11 @@ th, td {
 	padding-right: 20px;
 }
 
+.columns-container {
+	border: 1px solid #CCCCCC;
+	border-radius: 1em;
+}
+
 .two-columns {
 	display: grid;
 	grid-template-columns: calc(50% - 1em) calc(50% - 1em);
@@ -72,9 +77,19 @@ th, td {
 	/*font-size: 87%;*/
 }
 
-.columns-container {
-	border: 1px solid #CCCCCC;
-	border-radius: 1em;
+.three-columns {
+	display: grid;
+	grid-template-columns: calc(33% - 1em) calc(33% - 1em) calc(33% - 1em);
+	grid-gap: 2em;
+	padding: 0;
+	margin: 0;
+}
+
+.three-columns > div {
+	padding: 10px;
+	margin: 0;
+	border-left: 1px solid #ccc;
+	/*font-size: 87%;*/
 }
 
 .four-columns {
@@ -92,6 +107,6 @@ th, td {
 	border-left: 1px solid #ccc;
 }
 
-.four-columns > div.noborder, .two-columns > div.noborder {
+.four-columns > div.noborder, .two-columns > div.noborder, .three-columns > div.noborder {
 	border-left: 0;
 }
